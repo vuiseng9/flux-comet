@@ -6,4 +6,4 @@ COPY . .
 
 RUN pip install ninja packaging
 RUN git submodule update --init --recursive
-RUN OMP_NUM_THREADS=128 ./build.sh --arch "80;89;90" --nvshmem
+RUN OMP_NUM_THREADS=32 ./build.sh --arch "80;89;90" --nvshmem
